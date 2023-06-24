@@ -6,13 +6,11 @@
 <body>
   <h1>Client IP Address:</h1>
   <p id="ipAddress"></p>
-
   <script>
-   
     // Get the IP address and update the page content
- var clientIP = window.location.host;
-        ipAddressElement.textContent = clientIP;
-    
+    var ipAddressElement = document.getElementById("ipAddress");
+    var clientIP = window.location.host;
+    ipAddressElement.textContent = clientIP;
   </script>
 </body>
 </html>
